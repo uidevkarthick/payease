@@ -79,7 +79,7 @@ a {
       width: 100%;
       a {
         font-family: @font-ilisar_regular;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 13px;
         line-height: 16px;
         float: left;
@@ -161,6 +161,7 @@ a {
       a {
         background: #4d7ff7;
         color: #ffffff;
+        font-weight: 600;
 
         &:before {
           filter: invert(1);
@@ -724,17 +725,16 @@ input[type="text"]::-ms-input-placeholder {
   .res-drops {
     float: left;
     width: 100%;
-    padding: 20px;
   }
 
   .cont-sec {
     float: left;
     display: block;
-    padding: 15px;
+    padding: 0 15px;
     width: 100%;
 
     .cc-form-sec {
-      margin: 0;
+      margin: 15px 0 15px 0;
       width: 100%;
       padding: 20px 20px 0 20px;
 
@@ -773,13 +773,15 @@ input[type="text"]::-ms-input-placeholder {
           padding: 12px 0px;
           text-align: center;
           display: flex;
+          color: @txt-color !important;
+          background: none !important;
           justify-content: center;
 
           &::before {
-            background: none;
-            width: 0;
-            height: 0;
-            margin: 0;
+            background: none !important;
+            width: 0 !important;
+            height: 0 !important;
+            margin: 0 !important;
           }
         }
 
@@ -813,5 +815,35 @@ input[type="text"]::-ms-input-placeholder {
   .payeasecard-tlt {
     float: left;
     width: 100%;
+  }
+
+  .mb-15 {
+    margin-bottom: 15px;
+  }
+
+  .payeasecard-tlt .ttleft {
+    padding-left: 0;
+  }
+  .payeasecard-tlt .intr {
+    padding-left: 20%;
+  }
+  .payeasecard-tlt .intr.ttleft {
+    padding-left: 0%;
+  }
+
+  .payeasecard {
+    .tnu,
+    .intr {
+      padding-left: 0 !important;
+    }
+  }
+
+  #myTabContent .submit-sec {
+    width: 110%;
+    margin: 0 0 0 -5%;
+  }
+  #myTabContent .submit-sec button {
+    width: 90%;
+    margin-left: 5%;
   }
 }
