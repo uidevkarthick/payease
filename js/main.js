@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".paybx-responsive .sidenav li").click(function () {
+    $(".paybx-responsive .sidenav li+li").click(function () {
         $(".sidenav li").removeClass("active");
         $(this).addClass("active");
 
