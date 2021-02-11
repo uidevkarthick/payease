@@ -54,6 +54,7 @@ a {
   float: left;
   width: 224px;
   height: 100%;
+  border-right: 1px solid @border;
 
   .tlt {
     float: left;
@@ -77,6 +78,7 @@ a {
     li {
       float: left;
       width: 100%;
+      border-bottom: 1px solid @border;
       a {
         font-family: @font-ilisar_regular;
         font-weight: 500;
@@ -722,6 +724,7 @@ input[type="checkbox"]:checked + label:after {
       &:after {
         content: "";
         filter: invert(1);
+        transform: rotate(180deg);
       }
     }
   }
@@ -971,6 +974,7 @@ input[type="checkbox"]:checked + label:after {
   position: sticky;
   top: 0;
   z-index: 2;
+  border-bottom: 1px solid @border;
 
   .amtcard {
     float: left;
