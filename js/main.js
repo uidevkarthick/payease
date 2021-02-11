@@ -40,5 +40,20 @@ $(document).ready(function () {
         }
     });
 
+    // purches details in mobile dropdown
+
+    $(".droptlt").click(function () {
+        if ($(this).hasClass("rot")) {
+            $(".droppurdlts").slideUp();
+            $(this).removeClass("rot");
+            $(this).text("Show details");
+        } else {
+            $(".droppurdlts").slideDown();
+            $(this).addClass("rot");
+            $(this).text("Hide details");
+        }
+
+    })
+
 
 });
