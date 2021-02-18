@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
     </head>
 
     <body>
@@ -18,12 +19,12 @@
                 <div class="sidenav">
                     <p class="tlt">PAYMENT OPTIONS</p>
                     <ul>
-                        <li class="cc active"><a href="javascript:void(0)">Credit/Debit Cards</a></li>
+                        <!-- <li class="cc active"><a href="javascript:void(0)">Credit/Debit Cards</a></li>
                         <li class="wal"><a href="javascript:void(0)">Wallets</a></li>
                         <li class="upi"><a href="javascript:void(0)">UPI</a></li>
                         <li class="inb"><a href="javascript:void(0)">Internet Banking</a></li>
-                        <li class="cod"><a href="javascript:void(0)">Cash on Delivery</a></li>
-                        <li class="ease"><a href="javascript:void(0)">Pay@ease</a></li>
+                        <li class="cod"><a href="javascript:void(0)">Cash on Delivery</a></li> -->
+                        <li class="ease active"><a href="javascript:void(0)">Pay@ease</a></li>
                     </ul>
                 </div>
                 <div class="cont-sec">
@@ -45,7 +46,7 @@
                             <span>Nov 08, 2021</span>
                         </div>
                     </div>
-                    <div class="cc-form-sec sec-cont">
+                    <div class="cc-form-sec sec-cont" style="display: none;">
                         <p class="sec-tlt">Pay using Card</p>
                         <form>
                             <div class="form-group crd">
@@ -80,7 +81,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="ease-form-sec sec-cont" style="display: none;">
+                    <div class="ease-form-sec sec-cont">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="nocost-tab" data-toggle="tab" href="#nocost" role="tab"
@@ -247,8 +248,8 @@
                                     </div>
                                 </div>
                                 <div class="submit-sec">
-                                    <button type="submit" class="btn btn-primary submit-btn">Continue (Pay 21,450.00
-                                        INR)</button>
+                                    <button type="submit" class="btn btn-primary submit-btn slctnxt">Continue (Pay
+                                        21,450.00 INR)</button>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="stdemi" role="tabpanel" aria-labelledby="stdemi-tab">
@@ -401,8 +402,8 @@
                                     </div>
                                 </div>
                                 <div class="submit-sec">
-                                    <button type="submit" class="btn btn-primary submit-btn">Continue (Pay 21,450.00
-                                        INR)</button>
+                                    <button type="submit" class="btn btn-primary submit-btn slctnxt">Continue (Pay
+                                        21,450.00 INR)</button>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="fullpay" role="tabpanel" aria-labelledby="fullpay-tab">
@@ -452,539 +453,598 @@
                                     </div>
                                 </div>
                                 <div class="submit-sec">
-                                    <button type="submit" class="btn btn-primary submit-btn">Continue (Pay 21,450.00
-                                        INR)</button>
+                                    <button type="submit" class="btn btn-primary submit-btn slctnxt">Continue (Pay
+                                        21,450.00 INR)</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="paybx-responsive">
-                <span class="bck">Back</span>
-                <div class="purlines">
-                    <div class="amtcard mainpurcrd">
-                        <label>Purchase Amount (INR)</label>
-                        <span>20,000.00</span>
-                        <span class="droptlt">Show details</span>
-                    </div>
-                    <div class="droppurdlts">
-                        <div class="amtcard">
-                            <label>Merchant Name</label>
-                            <span>Fast Electronincs, Bangalore</span>
-                        </div>
-                        <div class="amtcard">
-                            <label>Customer Mobile Number</label>
-                            <span>+91 61438 61438</span>
-                        </div>
-                        <div class="amtcard">
-                            <label>Purchasing Date</label>
-                            <span>Nov 08, 2021</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="pay-tlt">Choose your payment method</p>
-                <div class="pay-container">
-                    <p class="pay-opt-tlt">PAYMENT OPTIONS</p>
-                    <div class="sidenav">
-                        <ul>
-                            <li class="cc active">
-                                <a href="javascript:void(0)">Credit/Debit Cards</a>
-                                <div class="res-drops cont-sec">
-                                    <div class="cc-form-sec sec-cont">
-                                        <p class="sec-tlt">Pay using Card</p>
-                                        <form>
-                                            <div class="form-group crd">
-                                                <label for="ccnum">Card No</label>
-                                                <input type="text" class="form-control" id="ccnum"
-                                                    aria-describedby="emailHelp"
-                                                    placeholder="xxxx - xxxx - xxxx - xxxx">
-                                            </div>
-                                            <div class="form-group holname">
-                                                <label for="cardname">Card Holder Name</label>
-                                                <input type="text" class="form-control" id="cardname"
-                                                    placeholder="Enter Card Holder Name">
-                                            </div>
-                                            <div class="form-group exp">
-                                                <label for="cardname">Expires on</label>
-                                                <input type="text" class="form-control" id="cardname"
-                                                    placeholder="MM/YY">
-                                            </div>
-                                            <div class="form-group cvv">
-                                                <label for="cardname">CVV</label>
-                                                <input type="text" class="form-control" id="cardname" placeholder="CVV">
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">Save card data for
-                                                    future payments</label>
-                                            </div>
-                                            <div class="submit-sec">
-                                                <button type="submit" class="btn btn-primary submit-btn">Get
-                                                    OTP</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                    <div class="ease-form-sec sec-cont afterslct" style="display: none;">
+                        <div class="aft-slct-1">
+                            <div class="select-lender table-responsive">
+                                <div class="afttlt">
+                                    <span>Select Lender</span>
+                                    <span>Change</span>
                                 </div>
-                            </li>
-                            <li class="wal"><a href="javascript:void(0)">Wallets</a></li>
-                            <li class="upi"><a href="javascript:void(0)">UPI</a></li>
-                            <li class="inb"><a href="javascript:void(0)">Internet Banking</a></li>
-                            <li class="cod"><a href="javascript:void(0)">Cash on Delivery</a></li>
-                            <li class="ease">
-                                <a href="javascript:void(0)">Pay@ease</a>
-                                <div class="res-drop cont-sec">
-                                    <div class="ease-form-sec sec-cont" style="display: none;">
-                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="res-nocost-tab" data-toggle="tab"
-                                                    href="#res-nocost" role="tab" aria-controls="res-nocost"
-                                                    aria-selected="true">No Cost EMI</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="res-stdemi-tab" data-toggle="tab"
-                                                    href="#res-stdemi" role="tab" aria-controls="res-stdemi"
-                                                    aria-selected="false">Standard EMI</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="res-fullpay-tab" data-toggle="tab"
-                                                    href="#res-fullpay" role="tab" aria-controls="res-fullpay"
-                                                    aria-selected="false">Full Payment</a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="res-nocost" role="tabpanel"
-                                                aria-labelledby="res-nocost-tab">
-                                                <!-- <div class="amtent-sec">
-                                                    <form>
-                                                        <div class="form-group amt">
-                                                            <label for="ccnum">Purchase Amount</label>
-                                                            <input type="text" class="form-control" id="ccnum"
-                                                                aria-describedby="emailHelp" placeholder="Enter Amount">
-                                                        </div>
-                                                    </form>
-                                                </div> -->
-                                                <div class="select-emi-sec">
-                                                    <p>Select your EMI Option</p>
-                                                    <ul>
-                                                        <li class="act">3 M</li>
-                                                        <li>6 M</li>
-                                                        <li>9 M</li>
-                                                        <li>12 M</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="select-lender table-responsive">
-                                                    <p>Select Lender</p>
-                                                    <div class="payeasecard-tlt">
-                                                        <div class="row">
-                                                            <div class="col-4"> <span class="intr ttleft">Lender</span>
-                                                            </div>
-                                                            <div class="col-4"> <span class="intr"></span>
-                                                            </div>
-                                                            <div class="col-4"> <span class="intr tright">Amount </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="submit-sec">
-                                                    <button type="submit" class="btn btn-primary submit-btn">Continue
-                                                        (Pay 21,450.00 INR)</button>
-                                                </div>
+                                <div class="payeasecard active">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <span class="chk chked"></span>
+                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                    class="img-fluid" /></span>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <span class="tnu">3 Month</span>
+                                            <label class="intr">12% int.</label>
+                                            <div class="drop-sec" style="display: block;">
+                                                <label class="intr">Total Payable</label>
                                             </div>
-                                            <div class="tab-pane fade" id="res-stdemi" role="tabpanel"
-                                                aria-labelledby="res-stdemi-tab">
-                                                <!-- <div class="amtent-sec">
-                                                    <form>
-                                                        <div class="form-group amt">
-                                                            <label for="ccnum">Purchase Amount</label>
-                                                            <input type="text" class="form-control" id="ccnum"
-                                                                aria-describedby="emailHelp" placeholder="Enter Amount">
-                                                        </div>
-                                                    </form>
-                                                </div> -->
-                                                <div class="select-emi-sec">
-                                                    <p>Select your EMI Option</p>
-                                                    <ul>
-                                                        <li class="act">3 M</li>
-                                                        <li>6 M</li>
-                                                        <li>9 M</li>
-                                                        <li>12 M</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="select-lender table-responsive">
-                                                    <p>Select Lender</p>
-                                                    <div class="payeasecard-tlt">
-                                                        <div class="row">
-                                                            <div class="col-4"> <span class="intr ttleft">Lender</span>
-                                                            </div>
-                                                            <div class="col-4"> <span class="intr"></span>
-                                                            </div>
-                                                            <div class="col-4"> <span class="intr tright">Amount </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard">
-                                                        <div class="row">
-                                                            <div class="col-12 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu">3 Month</span>
-                                                                <label class="intr">12% int.</label>
-                                                                <div class="drop-sec">
-                                                                    <label class="intr">Total Payable</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>7,150.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                                <div class="drop-sec">
-                                                                    <span class="tnu tright">21,450.00</span>
-                                                                    <label class="intr tright">INR/mo.</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="submit-sec">
-                                                    <button type="submit" class="btn btn-primary submit-btn">Continue
-                                                        (Pay 21,450.00 INR)</button>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="res-fullpay" role="tabpanel"
-                                                aria-labelledby="res-fullpay-tab">
-                                                <!-- <div class="amtent-sec">
-                                                    <form>
-                                                        <div class="form-group amt">
-                                                            <label for="ccnum">Purchase Amount</label>
-                                                            <input type="text" class="form-control" id="ccnum"
-                                                                aria-describedby="emailHelp" placeholder="Enter Amount">
-                                                        </div>
-                                                    </form>
-                                                </div> -->
-                                                <div class="select-lender table-responsive">
-                                                    <p>Select Lender</p>
-                                                    <div class="payeasecard-tlt fullpaycard">
-                                                        <div class="row">
-                                                            <div class="col-6"> <span class="intr ttleft">Lender</span>
-                                                            </div>
-                                                            <div class="col-6"> <span class="intr tright">Amount </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard fullpaycard">
-                                                        <div class="row">
-                                                            <div class="col-6 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>21,450.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard fullpaycard">
-                                                        <div class="row">
-                                                            <div class="col-6 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>21,450.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard fullpaycard">
-                                                        <div class="row">
-                                                            <div class="col-6 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>21,450.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard fullpaycard">
-                                                        <div class="row">
-                                                            <div class="col-6 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>21,450.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payeasecard fullpaycard">
-                                                        <div class="row">
-                                                            <div class="col-6 mb-15">
-                                                                <span class="chk"></span>
-                                                                <span class="chk-logo"><img src="images/payease.svg"
-                                                                        class="img-fluid" /></span>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <span class="tnu tright"><span
-                                                                        class="tenx">3x</span>21,450.00</span>
-                                                                <label class="intr tright">INR/mo.</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="submit-sec">
-                                                    <button type="submit" class="btn btn-primary submit-btn">Continue
-                                                        (Pay 21,450.00 INR)</button>
-                                                </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <span class="tnu tright">7,150.00</span>
+                                            <label class="intr tright">INR/mo.</label>
+                                            <div class="drop-sec" style="display: block;">
+                                                <span class="tnu tright">21,450.00</span>
+                                                <label class="intr tright">INR/mo.</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                                <div class="slctfilldls">
+                                    <div class="afttlt">
+                                        <span>Please share below details</span>
+                                    </div>
+                                    <div class="frmsec cc-form-sec">
+                                        <form>
+                                            <div class="form-group exp">
+                                                <label for="cardname">Date of Birth</label>
+                                                <input type="text" class="form-control" id="cardname"
+                                                    placeholder="DD/MM/YYYY">
+                                            </div>
+                                            <div class="form-group crd">
+                                                <label for="ccnum">PAN - Last 4 digits</label>
+                                                <input type="text" class="form-control" id="ccnum"
+                                                    aria-describedby="emailHelp" placeholder="xxxx">
+                                            </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-sec">
+                            <button type="submit" class="btn btn-primary submit-btn">Get OTP</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="paybx-responsive">
+            <span class="bck">Back</span>
+            <div class="purlines">
+                <div class="amtcard mainpurcrd">
+                    <label>Purchase Amount (INR)</label>
+                    <span>20,000.00</span>
+                    <span class="droptlt">Show details</span>
+                </div>
+                <div class="droppurdlts">
+                    <div class="amtcard">
+                        <label>Merchant Name</label>
+                        <span>Fast Electronincs, Bangalore</span>
+                    </div>
+                    <div class="amtcard">
+                        <label>Customer Mobile Number</label>
+                        <span>+91 61438 61438</span>
+                    </div>
+                    <div class="amtcard">
+                        <label>Purchasing Date</label>
+                        <span>Nov 08, 2021</span>
+                    </div>
+                </div>
+            </div>
+            <p class="pay-tlt">Choose your payment method</p>
+            <div class="pay-container">
+                <p class="pay-opt-tlt">PAYMENT OPTIONS</p>
+                <div class="sidenav">
+                    <ul>
+                        <li class="cc active">
+                            <a href="javascript:void(0)">Credit/Debit Cards</a>
+                            <div class="res-drops cont-sec">
+                                <div class="cc-form-sec sec-cont">
+                                    <p class="sec-tlt">Pay using Card</p>
+                                    <form>
+                                        <div class="form-group crd">
+                                            <label for="ccnum">Card No</label>
+                                            <input type="text" class="form-control" id="ccnum"
+                                                aria-describedby="emailHelp" placeholder="xxxx - xxxx - xxxx - xxxx">
+                                        </div>
+                                        <div class="form-group holname">
+                                            <label for="cardname">Card Holder Name</label>
+                                            <input type="text" class="form-control" id="cardname"
+                                                placeholder="Enter Card Holder Name">
+                                        </div>
+                                        <div class="form-group exp">
+                                            <label for="cardname">Expires on</label>
+                                            <input type="text" class="form-control" id="cardname" placeholder="MM/YY">
+                                        </div>
+                                        <div class="form-group cvv">
+                                            <label for="cardname">CVV</label>
+                                            <input type="text" class="form-control" id="cardname" placeholder="CVV">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Save card data for
+                                                future payments</label>
+                                        </div>
+                                        <div class="submit-sec">
+                                            <button type="submit" class="btn btn-primary submit-btn">Get OTP</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wal"><a href="javascript:void(0)">Wallets</a></li>
+                        <li class="upi"><a href="javascript:void(0)">UPI</a></li>
+                        <li class="inb"><a href="javascript:void(0)">Internet Banking</a></li>
+                        <li class="cod"><a href="javascript:void(0)">Cash on Delivery</a></li>
+                        <li class="ease">
+                            <a href="javascript:void(0)">Pay@ease</a>
+                            <div class="res-drop cont-sec">
+                                <div class="ease-form-sec sec-cont" style="display: none;">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="res-nocost-tab" data-toggle="tab"
+                                                href="#res-nocost" role="tab" aria-controls="res-nocost"
+                                                aria-selected="true">No Cost EMI</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="res-stdemi-tab" data-toggle="tab" href="#res-stdemi"
+                                                role="tab" aria-controls="res-stdemi" aria-selected="false">Standard
+                                                EMI</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="res-fullpay-tab" data-toggle="tab"
+                                                href="#res-fullpay" role="tab" aria-controls="res-fullpay"
+                                                aria-selected="false">Full Payment</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="res-nocost" role="tabpanel"
+                                            aria-labelledby="res-nocost-tab">
+                                            <!-- <div class="amtent-sec">
+                                                    <form>
+                                                        <div class="form-group amt">
+                                                            <label for="ccnum">Purchase Amount</label>
+                                                            <input type="text" class="form-control" id="ccnum"
+                                                                aria-describedby="emailHelp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </form>
+                                                </div> -->
+                                            <div class="select-emi-sec">
+                                                <p>Select your EMI Option</p>
+                                                <ul>
+                                                    <li class="act">3 M</li>
+                                                    <li>6 M</li>
+                                                    <li>9 M</li>
+                                                    <li>12 M</li>
+                                                </ul>
+                                            </div>
+                                            <div class="select-lender table-responsive">
+                                                <p>Select Lender</p>
+                                                <div class="payeasecard-tlt">
+                                                    <div class="row">
+                                                        <div class="col-4"> <span class="intr ttleft">Lender</span>
+                                                        </div>
+                                                        <div class="col-4"> <span class="intr"></span>
+                                                        </div>
+                                                        <div class="col-4"> <span class="intr tright">Amount </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-sec">
+                                                <button type="submit" class="btn btn-primary submit-btn">Continue (Pay
+                                                    21,450.00 INR)</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="res-stdemi" role="tabpanel"
+                                            aria-labelledby="res-stdemi-tab">
+                                            <!-- <div class="amtent-sec">
+                                                    <form>
+                                                        <div class="form-group amt">
+                                                            <label for="ccnum">Purchase Amount</label>
+                                                            <input type="text" class="form-control" id="ccnum"
+                                                                aria-describedby="emailHelp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </form>
+                                                </div> -->
+                                            <div class="select-emi-sec">
+                                                <p>Select your EMI Option</p>
+                                                <ul>
+                                                    <li class="act">3 M</li>
+                                                    <li>6 M</li>
+                                                    <li>9 M</li>
+                                                    <li>12 M</li>
+                                                </ul>
+                                            </div>
+                                            <div class="select-lender table-responsive">
+                                                <p>Select Lender</p>
+                                                <div class="payeasecard-tlt">
+                                                    <div class="row">
+                                                        <div class="col-4"> <span class="intr ttleft">Lender</span>
+                                                        </div>
+                                                        <div class="col-4"> <span class="intr"></span>
+                                                        </div>
+                                                        <div class="col-4"> <span class="intr tright">Amount </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu">3 Month</span>
+                                                            <label class="intr">12% int.</label>
+                                                            <div class="drop-sec">
+                                                                <label class="intr">Total Payable</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>7,150.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                            <div class="drop-sec">
+                                                                <span class="tnu tright">21,450.00</span>
+                                                                <label class="intr tright">INR/mo.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-sec">
+                                                <button type="submit" class="btn btn-primary submit-btn">Continue (Pay
+                                                    21,450.00 INR)</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="res-fullpay" role="tabpanel"
+                                            aria-labelledby="res-fullpay-tab">
+                                            <!-- <div class="amtent-sec">
+                                                    <form>
+                                                        <div class="form-group amt">
+                                                            <label for="ccnum">Purchase Amount</label>
+                                                            <input type="text" class="form-control" id="ccnum"
+                                                                aria-describedby="emailHelp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </form>
+                                                </div> -->
+                                            <div class="select-lender table-responsive">
+                                                <p>Select Lender</p>
+                                                <div class="payeasecard-tlt fullpaycard">
+                                                    <div class="row">
+                                                        <div class="col-6"> <span class="intr ttleft">Lender</span>
+                                                        </div>
+                                                        <div class="col-6"> <span class="intr tright">Amount </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard fullpaycard">
+                                                    <div class="row">
+                                                        <div class="col-6 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>21,450.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard fullpaycard">
+                                                    <div class="row">
+                                                        <div class="col-6 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>21,450.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard fullpaycard">
+                                                    <div class="row">
+                                                        <div class="col-6 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>21,450.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard fullpaycard">
+                                                    <div class="row">
+                                                        <div class="col-6 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>21,450.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payeasecard fullpaycard">
+                                                    <div class="row">
+                                                        <div class="col-6 mb-15">
+                                                            <span class="chk"></span>
+                                                            <span class="chk-logo"><img src="images/payease.svg"
+                                                                    class="img-fluid" /></span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <span class="tnu tright"><span
+                                                                    class="tenx">3x</span>21,450.00</span>
+                                                            <label class="intr tright">INR/mo.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-sec">
+                                                <button type="submit" class="btn btn-primary submit-btn">Continue (Pay
+                                                    21,450.00 INR)</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- <div class="poup">
+            <div class="poupsec">
+                <div class="popup-cont">successfully enter merchat</div>
+            </div>
+        </div> -->
         <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
         <script src="js/main.js"></script>
     </body>

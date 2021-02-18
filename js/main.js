@@ -2,15 +2,18 @@ $(document).ready(function () {
 
     // payease expand
     $(".payeasecard").click(function () {
-
-        $(this).addClass("active");
-        if ($(".payeasecard").hasClass("active")) {
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
             $(".payeasecard").find(".drop-sec").slideUp();
             $(".payeasecard").find(".chk").removeClass("chked");
             $(".payeasecard").removeClass("active");
-            $(this).addClass("active");
-            $(this).find(".drop-sec").slideDown();
-            $(this).find(".chk").addClass("chked");
+            $(this).toggleClass("active");
+            $(this).find(".drop-sec").slideToggle();
+            $(this).find(".chk").toggleClass("chked");
+        } else {
+            $(this).removeClass("active");
+            $(this).find(".drop-sec").slideUp();
+            $(this).find(".chk").removeClass("chked");
         }
     });
     // side nav section
@@ -53,7 +56,17 @@ $(document).ready(function () {
             $(this).text("Hide details");
         }
 
-    })
+    });
+
+    $(".select-emi-sec li").click(function () {
+        $(".select-emi-sec li").removeClass("active");
+        $(this).addClass("active")
+    });
+
+    $(".slctnxt").click(function () {
+        $(".ease-form-sec").hide();
+        $(".afterslct").show();
+    });
 
 
 });

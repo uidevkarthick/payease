@@ -1,0 +1,1045 @@
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6rfjptAgt5VM-kVkqdyU8n1ioStndl.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSGlZFhw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSflVFhw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6pfjptAgt5VM-kVkqdyU8n3kwq0g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3uAL8lc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3oQI8lc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F63fjptAgt5VM-kVkqdyU8n5ig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3twJ8lc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3pQP8lc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sen/v2/6xKjdSxYI9_Hmw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sen/v2/6xKudSxYI9__J9CoKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sen/v2/6xKudSxYI9__O9OoKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Ilisarniq";
+  src: url(../fonts/Ilisarniq-Regular.otf);
+}
+@font-face {
+  font-family: "Ilisar_light";
+  src: url(../fonts/Ilisarniq-Light.otf);
+}
+a {
+  text-decoration: none !important;
+}
+.no-pd {
+  padding: 0 !important;
+}
+.tright {
+  text-align: right;
+}
+.fluid-cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.paybx {
+  float: left;
+  width: 1180px;
+  height: 650px;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  display: block;
+}
+.sidenav {
+  background: #f7f9f9;
+  float: left;
+  width: 224px;
+  height: 100%;
+  border-right: 1px solid #6663771f;
+}
+.sidenav .tlt {
+  float: left;
+  width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #bab9c1;
+  padding: 37px 0 10px 0px;
+}
+.sidenav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 1px;
+  float: left;
+  width: 100%;
+}
+.sidenav ul li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #6663771f;
+}
+.sidenav ul li a {
+  font-family: "Ilisarniq";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  float: left;
+  width: 100%;
+  color: #131313;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+.sidenav ul .cc a:before {
+  content: "";
+  background: url("../images/cc.svg") no-repeat center;
+  width: 42px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sidenav ul .wal a:before {
+  content: "";
+  background: url("../images/wallet.svg") no-repeat center;
+  width: 42px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sidenav ul .upi a:before {
+  content: "";
+  background: url("../images/upi.svg") no-repeat center;
+  width: 42px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sidenav ul .inb a:before {
+  content: "";
+  background: url("../images/net-bank.svg") no-repeat center;
+  width: 42px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sidenav ul .cod a:before {
+  content: "";
+  background: url("../images/cod.svg") no-repeat center;
+  width: 42px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sidenav ul .ease a:before {
+  content: "";
+  background: url("../images/ease.svg") no-repeat center;
+  width: 42px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sidenav ul li.active a {
+  background: #4d7ff7;
+  color: #ffffff;
+  font-weight: 600;
+}
+.sidenav ul li.active a:before {
+  filter: invert(1);
+}
+.sidenav ul .ease.active a:before {
+  content: "";
+  background: url("../images/ease-active.svg") no-repeat center;
+  width: 42px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 15px;
+  filter: invert(0);
+}
+.cont-sec {
+  float: left;
+  width: calc(100% - 224px);
+  background: #fff;
+  height: 100%;
+  font-family: "Ilisarniq";
+  overflow-y: auto;
+}
+.cont-sec .cc-form-sec {
+  float: left;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #e4eded;
+  border-radius: 10px;
+  padding: 30px 40px;
+  width: 440px;
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+.cont-sec .cc-form-sec form .form-group {
+  float: left;
+  width: 100%;
+  padding-left: 24px;
+  position: relative;
+  border-bottom: 1px solid #6663771f;
+  margin-bottom: 26px;
+}
+.cont-sec .cc-form-sec form .form-check {
+  float: left;
+  width: 100%;
+  padding: 0 0 0 38px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.cont-sec .cc-form-sec form .form-check label {
+  padding-left: 0;
+  color: #656567;
+  position: relative;
+  top: 2px;
+}
+.cont-sec .cc-form-sec form .crd:before {
+  content: "";
+  background: url("../images/form-icn/crd.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+  left: 6px;
+}
+.cont-sec .cc-form-sec form .holname:before {
+  content: "";
+  background: url("../images/form-icn/user.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  bottom: 9px;
+  left: 6px;
+}
+.cont-sec .cc-form-sec form .exp:before {
+  content: "";
+  background: url("../images/form-icn/calendar.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  bottom: 9px;
+  left: -2px;
+}
+.cont-sec .cc-form-sec form .cvv:before {
+  content: "";
+  background: url("../images/form-icn/hash.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  bottom: 9px;
+  left: 6px;
+}
+.cont-sec .cc-form-sec form label {
+  color: #bab9c1;
+  font-size: 11px;
+  line-height: 13px;
+  display: block;
+  padding-left: 13px;
+  margin-bottom: 0;
+}
+.cont-sec .cc-form-sec form input {
+  box-shadow: none !important;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+  border: none;
+}
+.cont-sec .sec-cont .sec-tlt {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+.submit-sec {
+  float: left;
+  width: 123%;
+  background: #f7f9f9;
+  margin: 0 -40px;
+  padding: 18px 0px;
+}
+.submit-sec .submit-btn {
+  background: #4d7ff7;
+  height: 48px;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  box-shadow: none !important;
+  width: 81%;
+  margin-left: 40px;
+  padding-left: 20px;
+  text-align: left;
+  position: relative;
+}
+.submit-sec .submit-btn:after {
+  content: "";
+  background: url("../images/form-icn/arrow.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+input[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #bab9c1;
+  font-size: 12px;
+}
+input[type="text"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #bab9c1;
+  font-size: 12px;
+}
+input[type="text"]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #bab9c1;
+  font-size: 12px;
+}
+.ease-form-sec {
+  float: left;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #e4eded;
+  border-radius: 10px;
+  padding: 30px 40px;
+  padding-bottom: 0;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+.ease-form-sec ul {
+  border-bottom: 1px solid #6663771f;
+}
+.ease-form-sec .nav-link.active {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid #4d7ff7;
+  color: #4d7ff7;
+}
+.ease-form-sec .nav-link.active:hover {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid #4d7ff7;
+}
+.ease-form-sec .nav-link {
+  border: 0;
+  border-bottom: 3px solid transparent;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #131313;
+}
+.ease-form-sec .nav-link:hover {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.ease-form-sec .amtent-sec {
+  float: left;
+  width: 100%;
+}
+.ease-form-sec .amtent-sec form .form-group {
+  float: left;
+  width: 100%;
+  padding-left: 24px;
+  position: relative;
+  border-bottom: 1px solid #6663771f;
+  margin-bottom: 26px;
+}
+.ease-form-sec .amtent-sec form input {
+  border: none;
+  box-shadow: none !important;
+}
+.ease-form-sec .amtent-sec form label {
+  color: #bab9c1;
+  font-size: 11px;
+  line-height: 13px;
+  display: block;
+  padding-left: 13px;
+  margin-bottom: 0;
+}
+.ease-form-sec .amtent-sec form .amt:before {
+  content: "";
+  background: url("../images/form-icn/amt.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+  left: 6px;
+}
+.ease-form-sec .select-emi-sec {
+  float: left;
+  width: 100%;
+}
+.ease-form-sec .select-emi-sec p {
+  font-family: "Ilisarniq";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8a90a6;
+}
+.ease-form-sec .select-emi-sec ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+}
+.ease-form-sec .select-emi-sec ul li {
+  float: left;
+  font-family: "Ilisarniq";
+  margin-right: 15px;
+  border: 1px solid #7f8ea2;
+  border-radius: 12px;
+  color: #131313;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 3px 15px;
+  cursor: pointer;
+}
+.ease-form-sec .select-emi-sec ul li.active {
+  background: #141834;
+  color: #ffffff;
+  border-color: #141834;
+}
+.ease-form-sec .select-lender {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.ease-form-sec .select-lender p {
+  font-family: "Ilisarniq";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8a90a6;
+}
+.ease-form-sec .payeasecard.active {
+  background: #f7f9f9;
+}
+.ease-form-sec .payeasecard {
+  float: left;
+  width: 100%;
+  border: 1px solid #e7f0f0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.ease-form-sec .payeasecard .chk {
+  float: left;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #cfd4e3;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+  margin-right: 12px;
+}
+.ease-form-sec .payeasecard .chked {
+  background: #38ae04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #38ae04;
+}
+.ease-form-sec .payeasecard .chked:before {
+  content: "";
+  background: url("../images/activepay.svg") center no-repeat;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-size: cover;
+}
+.ease-form-sec .payeasecard .chk-logo {
+  float: left;
+  width: 70%;
+}
+.ease-form-sec .payeasecard .tnu {
+  float: left;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+  margin-bottom: 5px;
+  padding-left: 30%;
+}
+.ease-form-sec .payeasecard .intr {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+  color: #8a90a6;
+  padding-left: 30%;
+}
+.ease-form-sec .payeasecard .drop-sec {
+  margin-top: 24px;
+  float: left;
+  width: 100%;
+  display: none;
+}
+#myTabContent {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+#myTabContent .submit-sec {
+  width: 112%;
+}
+#myTabContent .submit-sec button {
+  width: 60%;
+  margin-left: 20%;
+}
+.payeasecard-tlt {
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 12px;
+}
+.payeasecard-tlt .intr {
+  float: left;
+  padding-left: 30%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #bab9c1;
+  width: 100%;
+}
+.payeasecard-tlt .ttleft {
+  padding-left: 30px;
+}
+.paybx-responsive {
+  display: none;
+}
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+  .paybx {
+    display: none;
+  }
+  .paybx-responsive {
+    display: block;
+    font-family: "Ilisarniq";
+  }
+  .fluid-cen {
+    display: block;
+    padding: 0;
+  }
+  .bck {
+    float: left;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4d7ff7;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+  .bck::before {
+    content: "";
+    background: url("../images/res-arr.svg") no-repeat center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+  }
+  .pay-tlt {
+    float: left;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #131313;
+    width: 100%;
+    margin-top: 15px;
+    padding: 0 20px;
+  }
+  .pay-container {
+    float: left;
+    width: 100%;
+  }
+  .pay-container .pay-opt-tlt {
+    float: left;
+    width: 100%;
+    background: #f7f9f9;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    color: #bab9c1;
+    padding: 15px 20px;
+    font-family: "IBM Plex Mono", monospace;
+    margin-bottom: 0;
+  }
+  .sidenav {
+    float: left;
+    width: 100%;
+    margin: 0;
+    background: #ffffff;
+  }
+  .sidenav li {
+    border-bottom: 1px solid #6663771f;
+    position: relative;
+  }
+  .sidenav li:after {
+    content: "";
+    background: url("../images/res-arr-down.svg") no-repeat center;
+    width: 9px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    top: 21px;
+  }
+  .sidenav li.active:after {
+    content: "";
+    filter: invert(1);
+    transform: rotate(180deg);
+  }
+  .res-drops {
+    float: left;
+    width: 100%;
+  }
+  .cont-sec {
+    float: left;
+    display: block;
+    padding: 0 15px;
+    width: 100%;
+  }
+  .cont-sec .cc-form-sec {
+    margin: 15px 0 15px 0;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+  }
+  .cont-sec .cc-form-sec .exp:before {
+    content: "";
+    left: 6px !important;
+  }
+  .cont-sec .form-check {
+    padding-left: 20px !important;
+  }
+  .ease-form-sec {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .ease-form-sec .nav-tabs {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .ease-form-sec .nav-tabs li {
+    float: left;
+    width: 33.3%;
+  }
+  .ease-form-sec .nav-tabs li a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 12px 0px;
+    text-align: center;
+    display: flex;
+    color: #131313 !important;
+    background: none !important;
+    justify-content: center;
+  }
+  .ease-form-sec .nav-tabs li a::before {
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+  .ease-form-sec .nav-tabs li::after {
+    background: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  #myTabContent {
+    margin-top: 20px;
+  }
+  .select-emi-sec li {
+    width: 20% !important;
+    margin-right: 2.5% !important;
+    text-align: center;
+    padding: 5px 0 !important;
+  }
+  .select-emi-sec li::after {
+    background: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .select-emi-sec li.act {
+    background: #141834;
+    color: #ffffff !important;
+    border-color: #141834 !important;
+  }
+  .payeasecard-tlt {
+    float: left;
+    width: 100%;
+  }
+  .mb-15 {
+    margin-bottom: 15px;
+  }
+  .payeasecard-tlt .ttleft {
+    padding-left: 0;
+  }
+  .payeasecard-tlt .intr {
+    padding-left: 20%;
+  }
+  .payeasecard-tlt .intr.ttleft {
+    padding-left: 0%;
+  }
+  .payeasecard .tnu,
+  .payeasecard .intr {
+    padding-left: 0 !important;
+  }
+  #myTabContent .submit-sec {
+    width: 110%;
+    margin: 0 0 0 -5%;
+  }
+  #myTabContent .submit-sec button {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .purlines {
+    float: left;
+    width: 100%;
+    background: #f4faff;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    display: block;
+    margin-top: 20px;
+  }
+  .purlines .mainpurcrd {
+    float: left;
+    width: 100%;
+  }
+  .purlines .droptlt {
+    float: right;
+    color: #4d7ff7;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    position: absolute;
+    top: -6px;
+    right: 20px;
+  }
+  .purlines .droptlt:after {
+    content: "";
+    background: url("../images/arr-blu.svg") no-repeat center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    top: 5px;
+    left: 4px;
+    position: relative;
+    transition: 0.2s all ease;
+  }
+  .purlines .rot:after {
+    transform: rotate(180deg);
+    transition: 0.2s all ease;
+  }
+  .purlines .droppurdlts {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-top: 15px;
+  }
+  .purlines .droppurdlts .amtcard {
+    margin-bottom: 15px !important;
+  }
+  .purlines .droppurdlts .amtcard:last-child {
+    margin-bottom: 0 !important;
+  }
+  .purlines .amtcard {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 15px 15px;
+  }
+  .purlines .amtcard:first-child {
+    margin-bottom: 0;
+  }
+  .purlines .amtcard:last-child {
+    margin-bottom: 0;
+  }
+  .purlines label {
+    float: left;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #a09eb0;
+    margin-bottom: 5px;
+  }
+  .purlines span {
+    float: left;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #141834;
+  }
+}
+.toplines {
+  float: left;
+  width: 100%;
+  background: #f4faff;
+  display: flex;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid #6663771f;
+}
+.toplines .amtcard {
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.toplines label {
+  float: left;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #a09eb0;
+}
+.toplines span {
+  float: left;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #141834;
+}
+.tenx {
+  margin-right: 15px;
+}
+.poup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000073;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.poup .poupsec {
+  width: 440px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.poup .popup-cont {
+  float: left;
+  width: 100%;
+  font-family: "Ilisar_light";
+}
+.poup .popup-cont::before {
+  content: "";
+  background: url("../images/tick.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+.afterslct {
+  padding: 0;
+}
+.afterslct .select-lender {
+  margin-top: 0;
+}
+.afterslct .payeasecard {
+  pointer-events: none;
+}
+.afterslct .aft-slct-1 {
+  float: left;
+  width: 100%;
+  padding: 30px 40px;
+}
+.afterslct .submit-sec {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.afterslct .submit-sec button {
+  width: 60%;
+}
+.afterslct .afttlt {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.afterslct .afttlt span:first-child {
+  float: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #131313;
+  font-family: "Ilisarniq";
+}
+.afterslct .afttlt span:nth-child(2) {
+  float: right;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: "Ilisarniq";
+  color: #4d7ff7;
+  cursor: pointer;
+}
+.slctfilldls {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.slctfilldls .afttlt {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.slctfilldls .afttlt span:first-child {
+  float: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #131313;
+  font-family: "Ilisarniq";
+}
+.slctfilldls .frmsec {
+  float: left;
+  margin: 0;
+  width: 100%;
+  border: none;
+  padding: 20px 0 10px 0;
+}
+.slctfilldls .exp::before {
+  left: 6px !important;
+}

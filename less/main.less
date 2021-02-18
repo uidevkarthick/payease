@@ -1009,3 +1009,138 @@ input[type="checkbox"]:checked + label:after {
 .tenx {
   margin-right: 15px;
 }
+
+.poup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000073;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  .poupsec {
+    width: 440px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .popup-cont {
+    float: left;
+    width: 100%;
+    font-family: @font-ilisar_light;
+
+    &::before {
+      content: "";
+      background: url("../images/tick.svg") no-repeat center;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      left: -5px;
+    }
+  }
+}
+
+.afterslct {
+  padding: 0;
+  .select-lender {
+    margin-top: 0;
+  }
+
+  .payeasecard {
+    pointer-events: none;
+  }
+
+  .aft-slct-1 {
+    float: left;
+    width: 100%;
+    padding: 30px 40px;
+  }
+  .submit-sec {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 60%;
+    }
+  }
+
+  .afttlt {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    span {
+      &:first-child {
+        float: left;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: @txt-color;
+        font-family: @font-ilisar_regular;
+      }
+
+      &:nth-child(2) {
+        float: right;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        font-family: @font-ilisar_regular;
+        color: #4d7ff7;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.slctfilldls {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+
+  .afttlt {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    span {
+      &:first-child {
+        float: left;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: @txt-color;
+        font-family: @font-ilisar_regular;
+      }
+    }
+  }
+
+  .frmsec {
+    float: left;
+    margin: 0;
+    width: 100%;
+    border: none;
+    padding: 20px 0 10px 0;
+  }
+
+  .exp {
+    &::before {
+      left: 6px !important;
+    }
+  }
+}
