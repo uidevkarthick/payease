@@ -30,18 +30,18 @@ $(document).ready(function () {
         }
     });
 
-    $(".paybx-responsive .sidenav li").click(function () {
-        $(".sidenav li").removeClass("active");
-        $(this).addClass("active");
+    // $(".paybx-responsive .sidenav li").click(function () {
+    //     $(".sidenav li").removeClass("active");
+    //     $(this).addClass("active");
 
-        if ($(".cc").hasClass("active")) {
-            $(".cc-form-sec").slideDown();
-            $(".ease-form-sec").slideUp();
-        } else if ($(".ease").hasClass("active")) {
-            $(".cc-form-sec").slideUp();
-            $(".ease-form-sec").slideDown();
-        }
-    });
+    //     if ($(".cc").hasClass("active")) {
+    //         $(".cc-form-sec").slideDown();
+    //         $(".ease-form-sec").slideUp();
+    //     } else if ($(".ease").hasClass("active")) {
+    //         $(".cc-form-sec").slideUp();
+    //         $(".ease-form-sec").slideDown();
+    //     }
+    // });
 
     // purches details in mobile dropdown
 
@@ -63,7 +63,14 @@ $(document).ready(function () {
         $(this).addClass("active")
     });
 
+    $(".paybx-responsive .select-emi-sec li").click(function () {
+        $(".select-emi-sec li").removeClass("act");
+        $(this).addClass("act")
+    });
+
+
     $(".slctnxt").click(function () {
+
         $(".ease-form-sec").hide();
         $(".afterslct").show();
     });

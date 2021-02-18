@@ -1052,6 +1052,11 @@ input[type="checkbox"]:checked + label:after {
 
 .afterslct {
   padding: 0;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+  }
+
   .select-lender {
     margin-top: 0;
   }
@@ -1064,6 +1069,9 @@ input[type="checkbox"]:checked + label:after {
     float: left;
     width: 100%;
     padding: 30px 40px;
+    @media only screen and (max-width: 600px) {
+      padding: 0;
+    }
   }
   .submit-sec {
     width: 100%;
@@ -1071,8 +1079,18 @@ input[type="checkbox"]:checked + label:after {
     display: flex;
     justify-content: center;
 
+    @media only screen and (max-width: 600px) {
+      width: 110%;
+      margin: 0 0 0 -5%;
+    }
+
     button {
       width: 60%;
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin-left: 0;
+      }
     }
   }
 
@@ -1089,6 +1107,9 @@ input[type="checkbox"]:checked + label:after {
         line-height: 16px;
         color: @txt-color;
         font-family: @font-ilisar_regular;
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
       }
 
       &:last-child {
@@ -1108,6 +1129,9 @@ input[type="checkbox"]:checked + label:after {
   float: left;
   width: 100%;
   margin-top: 30px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+  }
 
   .afttlt {
     float: left;
@@ -1122,6 +1146,9 @@ input[type="checkbox"]:checked + label:after {
         line-height: 16px;
         color: @txt-color;
         font-family: @font-ilisar_regular;
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
       }
     }
   }

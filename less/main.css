@@ -971,6 +971,11 @@ input[type="checkbox"]:checked + label:after {
 .afterslct {
   padding: 0;
 }
+@media only screen and (max-width: 600px) {
+  .afterslct {
+    margin-top: 30px;
+  }
+}
 .afterslct .select-lender {
   margin-top: 0;
 }
@@ -982,14 +987,31 @@ input[type="checkbox"]:checked + label:after {
   width: 100%;
   padding: 30px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .afterslct .aft-slct-1 {
+    padding: 0;
+  }
+}
 .afterslct .submit-sec {
   width: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+  .afterslct .submit-sec {
+    width: 110%;
+    margin: 0 0 0 -5%;
+  }
+}
 .afterslct .submit-sec button {
   width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  .afterslct .submit-sec button {
+    width: 90%;
+    margin-left: 0;
+  }
 }
 .afterslct .afttlt {
   float: left;
@@ -1005,6 +1027,11 @@ input[type="checkbox"]:checked + label:after {
   color: #131313;
   font-family: "Ilisarniq";
 }
+@media only screen and (max-width: 600px) {
+  .afterslct .afttlt span:first-child {
+    font-size: 14px;
+  }
+}
 .afterslct .afttlt span:last-child {
   float: right;
   font-weight: normal;
@@ -1019,6 +1046,11 @@ input[type="checkbox"]:checked + label:after {
   width: 100%;
   margin-top: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .slctfilldls {
+    margin-top: 10px;
+  }
+}
 .slctfilldls .afttlt {
   float: left;
   width: 100%;
@@ -1032,6 +1064,11 @@ input[type="checkbox"]:checked + label:after {
   line-height: 16px;
   color: #131313;
   font-family: "Ilisarniq";
+}
+@media only screen and (max-width: 600px) {
+  .slctfilldls .afttlt span:first-child {
+    font-size: 14px;
+  }
 }
 .slctfilldls .frmsec {
   float: left;
